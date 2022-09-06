@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>OX-ing</title>
+</head>
+
+<body>
+    <div id="noJsAlert" class="shownWhenNoJs">
+        Please enable Javascript in your browser
+    </div>
+    <div id="contents" class="hidden shownWhenJs">
+        <div id="menuList" class="d10s3">
+            this is the menuList
+        </div>
+
+        <div class="row" id="header">
+            <div class="cell d10s1" id="pMenu">
+                <label class="icon button" id="pMenuButton">
+                    <input id="pMenuButtonInput" type="checkbox">
+                    <div class="canvas"></div>
+                </label>
+            </div>
+            <div class="cell d10s3"></div>
+            <div class="cell d10s2" id="logo"></div>
+            <div class="cell d10s4"></div>
+
+
+        </div>
+        <div class="row" id="main">
+            <div class="cell d10s2" id="accordion">
+                <div class="accordionButton">Accordion Button 1</div>
+                <div class="accordionDrop">Lorem, ipsum dolor sit amet consectetur adipisicing elit. nam modi
+                    consequuntur harum ratione quisquam, corrupti, temporibus, dolores </div>
+                <div class="accordionButton">Accordion Button 2</div>
+                <div class="accordionDrop">Aliquam quo sunt necessitatibus qui dolorum repudiandae voluptas Lorem, ipsum
+                    dolor sit amet consectetur adipisicing elit. </div>
+                <div class="accordionButton">Accordion Button 3</div>
+                <div class="accordionDrop">nam modi consequuntur harum ratione quisquam, corrupti, temporibus, dolores
+                    Aliquam quo sunt necessitatibus qui dolorum repudiandae voluptas Lorem,
+                    quasi maxime vitae numquam omnis!</div>
+            </div>
+            <div class="cell d10s1"></div>
+            <div class="cell d10s6" id="slideShow">
+                <div id="slideShowScreen">
+                    <img id="slideShowImage0" class="slideShowImage" width="550" height="190" src="./img/money0.jpg"
+                        alt="">
+                    <img id="slideShowImage1" class="slideShowImage" width="550" height="190" src="./img/money1.jpg"
+                        alt="">
+                    <img id="slideShowImage2" class="slideShowImage" width="550" height="190" src="./img/money2.jpg"
+                        alt="">
+                    <img id="slideShowImage3" class="slideShowImage" width="550" height="190" src="./img/money3.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row" id="topFooter">
+            <div class="cell d10s3" id="tabPanel">
+                <ul id="tabButtons">
+                    <li class="tabButton active" href="#tab1">Tab1</li>
+                    <li class="tabButton" href="#tab2">Tab2</li>
+                    <li class="tabButton" href="#tab3">Tab3</li>
+                </ul>
+                <div class="tab active" id="tab1">Content in Tab1<br>Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. nam modi </div>
+                <div class="tab" id="tab2">Content in Tab2<br>Aliquam quo sunt necessitatibus qui dolorum repudiandae
+                    voluptas Lorem, ipsum</div>
+                <div class="tab" id="tab3">Content in Tab3<br> nam modi consequuntur harum ratione quisquam, corrupti,
+                    temporibus, dolores
+                    Aliquam quo sunt necessitatibus qui dolorum repudiandae voluptas Lorem,
+                    quasi maxime vitae numquam omnis!</div>
+            </div>
+            <div class="cell d10s6" id="gallery">
+                <div id="bigFrame"></div>
+                <ul id="thumbnails">
+                    <li><a href="../img/flower1.jpg"><img src="../img/flower1thumb.jpg" alt="flower thumbnail1">
+                        </a></li>
+                    <li><a href="../img/flower2.jpg"><img src="../img/flower2thumb.jpg" alt="flower thumbnail2">
+                        </a></li>
+                    <li><a href="../img/flower3.jpg"><img src="../img/flower3thumb.jpg" alt="flower thumbnail3">
+                        </a></li>
+
+
+                </ul>
+            </div>
+        </div>
+
+
+    </div> <!-- end of #showWhenJs-->
+
+    <!-- <script>
+        var ver = (new Date()).getTime()
+        var newScript = document.createElement('script')
+        newScript.src = "js/no-js.js" + '?v=' + ver
+        document.body.appendChild(newScript)
+    </script> -->
+    <script src="js/no-js.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/panels.js"></script>
+
+
+</body>
+
+</html>

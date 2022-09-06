@@ -1,0 +1,421 @@
+html {
+    width: 100%;
+    min-height: 80%;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 960px;
+    min-height: 400px;
+    background-color: rgb(210, 187, 231);
+    margin: 0 auto;
+    padding: 0;
+}
+
+.row {
+    width: 960px;
+    min-height: 30px;
+    margin: 0px 0;
+    padding: 0;
+    color: aliceblue;
+    position: relative;
+    overflow: hidden;
+}
+
+#header {
+    background-color: #1b4965;
+    height: 100px;
+}
+
+#subHeader {
+    background-color: #66cb62;
+    height: 15px;
+}
+
+#main {
+    background-color: #62b6cb;
+    height: 300px;
+    padding: 0;
+}
+
+#topFooter {
+    background-color: #cae9ff;
+    color: #022031;
+    height: 350px;
+}
+
+#footer {
+    background-color: #1b4965;
+    zz-index: 0;
+    height: 100px;
+}
+
+.cell {
+    margin: 2px 2px;
+    /* here we set inline-block and float and it works fine with these settings*/
+    padding: 0;
+    min-height: 100px;
+    line-height: 100px;
+    float: left;
+}
+
+.d10s1 {
+    width: 92px;
+}
+
+.d10s2 {
+    width: 188px;
+}
+
+.d10s3 {
+    width: 284px;
+}
+
+.d10s4 {
+    width: 380px;
+}
+
+.d10s5 {
+    width: 476px;
+}
+
+.d10s6 {
+    width: 572px;
+}
+
+.d10s7 {
+    width: 668px;
+}
+
+.d10s8 {
+    width: 764px;
+}
+
+.d10s9 {
+    width: 860px;
+}
+
+.d10s10 {
+    width: 956px;
+}
+
+#pMenu {
+    background-color: transparent;
+}
+
+#search {
+    background-color: transparent;
+}
+
+#logo {
+    background-color: transparent;
+    background-image: url("../img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* format the menu icon toggle*/
+#pMenuButton {
+    width: 50px;
+    --height: 50px;
+    height: var(--height);
+    display: inline-block;
+    line-height: var(--height);
+    position: relative
+}
+
+#pMenuButton:hover {
+    cursor: pointer;
+}
+
+#pMenuButton input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+#pMenuButtonInput+.canvas {
+    background-image: url(../img/menu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#pMenuButtonInput:checked+.canvas {
+    background-image: url(../img/close.png);
+}
+
+#menuList {
+    position: absolute;
+    height: 330px;
+    margin: 0;
+    z-index: 1;
+    background-color: #b0a87b;
+
+}
+
+.p180row {
+    width: 186px;
+    min-height: 60px;
+    margin: 0px auto;
+    padding: 0;
+    color: rgb(162, 168, 173);
+    position: relative;
+}
+
+.p180c3s1 {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 1px 1px;
+    background-color: #022031;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+    float: left;
+    color: #cae9ff;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.horLine {
+    height: 2px;
+    width: 80px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: red solid;
+}
+
+#alerts {
+    font-size: 60px;
+    color: #A20021;
+}
+
+#alerts button {
+    font-size: 30px;
+    background-color: #cae9ff;
+    color: #A20021;
+    border-color: transparent;
+}
+
+
+.hidden {
+    display: none;
+}
+
+#accordion {
+    margin: 1em;
+}
+
+.accordionButton {
+    line-height: 2em;
+    margin-top: 1px;
+    height: 2em;
+    background-color: #65351b;
+    border-radius: 0.6em 0.6em 0.0em 0.0em;
+    padding: 0.5em;
+}
+
+.accordionButton:hover {
+    cursor: pointer;
+}
+
+.accordionDrop {
+    line-height: 1em;
+    height: 6em;
+    background-color: #B07BAC;
+    overflow: hidden;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+#tabPanel {
+    padding: 1em;
+}
+
+#tabButtons {
+    margin-bottom: 0px;
+    height: auto;
+    line-height: 20px;
+}
+
+.tab {
+    min-height: 10px;
+    height: 200px;
+    line-height: 1em;
+    padding: 0.6em
+}
+
+.tabButton {
+    border: black solid 1px;
+    border-width: 1px 1px 0px 1px;
+    border-radius: 0.0em 0.6em 0 0;
+    height: 2em;
+    width: 4em;
+    line-height: 1em;
+    display: inline-block;
+    padding: 0.3em
+}
+
+.tabButton:hover {
+    cursor: pointer;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+    background-color: #b0a87b;
+
+}
+
+.tabButton.active {
+    background-color: #b0a87b;
+}
+
+.modal {
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.8);
+    opacity: 0;
+    z-index: 5;
+    width: 700px;
+    height: 400px;
+    top: 0;
+}
+
+#bigPopUp p {
+    font-size: 3em;
+}
+
+#bigPopUp button {
+    font-size: 2em;
+}
+
+#gallery {
+    padding: 1em;
+}
+
+
+#bigFrame {
+    width: 500px;
+    height: 250px;
+    border: 1px solid black;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#thumbnails img {
+    width: 50px;
+    height: 50px;
+}
+
+#thumbnails li {
+    display: inline-block;
+}
+
+#slideShow {
+    position: relative;
+    margin: 1em;
+}
+
+#slideShowScreen {
+    width: 550px;
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideShowImage {
+    position: absolute;
+    width: 550px;
+    height: 190;
+    left: 550px;
+}
+
+#slideShowButtons {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.slideShowButton {
+    position: absolute;
+    display: inline-block;
+    --diameter: 15px;
+    width: var(--diameter);
+    height: var(--diameter);
+    border-radius: calc(var(--diameter)/2);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slideShowButton:hover {
+    cursor: pointer;
+}
+
+.slideShowButton input {
+    position: absolute;
+    display: inline-block;
+    border: orange 1px solid;
+    width: 0;
+    height: 0;
+    border-radius: 12px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.slideShowButton div {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #cae9ff;
+}
+
+.slideShowButton input:checked+div {
+    background-color: #1b4965;
+}
+
+
+/*-------------------Palet--------------------------*/
+Overoall Pallet {
+    color: #bee9e8;
+    color: #62b6cb;
+    color: #1b4965;
+    color: #cae9ff;
+    color: #5fa8d3;
+    color: #65351b;
+    color: #022031;
+}
+
+MainPart Pallet {
+    color: #62B6CB;
+    color: #A20021;
+    color: #F5F8DE;
+    color: #3A4E48;
+    color: #F3752B;
+    color: #B07BAC
+}
+
+heading pallet {
+    color: #1B4965;
+    color: #A62639;
+
+}
